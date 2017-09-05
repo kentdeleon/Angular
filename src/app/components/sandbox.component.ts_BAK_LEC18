@@ -1,0 +1,19 @@
+import { Component } from '@angular/core';
+import { Customer } from './Customer'
+
+@Component({
+	selector: 'sandbox',
+	template: `<h1>Hello Angular</h1>`
+	
+
+
+})
+
+
+export class SandboxComponent{
+
+	
+
+
+	
+}
