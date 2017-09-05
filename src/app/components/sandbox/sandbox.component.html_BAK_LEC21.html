@@ -1,0 +1,28 @@
+<h1 class="special">Hello Angular from Lecture 21</h1>
+
+<p>Hello<!-- 
+<span *ngIf="showname"> {{name}}</span>
+<span *ngIf="!showname"> World</span>
+ -->
+<span *ngIf="showname; else noName"> {{name}}</span>
+<ng-template #noName>World</ng-template>
+
+<p>Hello {{showname ? name : 'World from Ternary'}}</p>
+
+<hr>
+
+<div [ngSwitch] = "greeting">
+	<div *ngSwitchCase="'1'">
+		Hello World
+	</div>
+	<div *ngSwitchCase="'2'">
+		Hi There!
+	</div>
+	<div *ngSwitchCase="'3'">
+		What's up
+	</div>
+	<div *ngSwitchDefault>
+		Hello
+	</div>
+</div>
+

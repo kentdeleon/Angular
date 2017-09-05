@@ -1,0 +1,19 @@
+<h1 class="special">Hello Angular from Lecture 22</h1>
+
+
+<!-- 3 ways to bind properties -->
+<div><img src="{{imageUrl}}"></div>	
+<div><img [src]="imageUrl"></div> <!-- can use boolean other than string -->
+
+<div>
+<img bind-src="imageUrl">
+</div>
+
+
+<h4>Image location: <span [textContent]="imageUrl"></span></h4>
+
+<hr>
+
+<h2>Create Post</h2>
+<p [hidden]="isUnchanged"> Post has been changed, please save</p>
+<button [disabled]="isUnchanged">Save</button>
