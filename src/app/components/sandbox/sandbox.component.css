@@ -1,5 +1,9 @@
-.special {
-	color: green;
-	font-size: 12px;
-	text-transform: uppercase;
+.special{
+	 		color: green;
+	 		font-size: 20px;
+			text-transform: lowercase;
+}
+
+.superSpecial{
+	color: blue;
 }
